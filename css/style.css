@@ -71,7 +71,6 @@
 
 .container > div {
     padding: 10px;
-    //border: 1px solid red;
 	
 }
 
@@ -99,9 +98,6 @@
 	border: 3px solid red;
 	margin: 0;
 	padding:0;
-	display: grid;
-	grid-template-columns: 1fr; 
-    grid-template-rows: 50px;
 }
 
 .main {
@@ -134,12 +130,15 @@
     align-items: center;
 }
 
-button {
-	/*display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 50px;
-	*/
-	justify-self: end;
+.btn {
+	position: relative;
+	float: right;
+	display: inline-block;
+	top: 0;
+	
+	padding: 0;
+	height: 50px;
+	vertical-align: middle;
 }
 
 /*horizontal line*/
