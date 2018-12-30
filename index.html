@@ -4,34 +4,42 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Solo project</title>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/fonts/Glyphter.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/script.js" type="text/javascript"></script>
 </head>
 <body>
  
  <!-- Flexbox -->
- <div class="side">
-    <i class="fas fa-bars"></i>
-      <img src="">
-      <a href="#"><i class="icon-general"></i>&nbsp;General</a>
-      <a href="#"><i class="icon-details"></i>&nbsp;Details</a>
-      <a href="#"><i class="icon-links"></i>&nbsp;Links</a>
-      <a href="#"><i class="icon-banners"></i>&nbsp;Banners</a>
-      <a href="#"><i class="icon-personaldata"></i>&nbsp;Personal Data</a>
-      <a href="#"><i class="icon-payout"></i>&nbsp;Payout</a>
-      <a href="#"><i class="icon-postback"></i>&nbsp;Postback</a>
+ <div id="side1" class="side">
+	  <img class="just" src="pics/just.jpg">
+      <a href="#"><i class="icon-general"></i>General</a>
+      <a href="#"><i class="icon-details"></i>Details</a>
+      <a href="#"><i class="icon-links"></i>Links</a>
+      <a href="#"><i class="icon-banners"></i>Banners</a>
+      <a href="#"><i class="icon-personaldata"></i>Personal Data</a>
+      <a href="#"><i class="icon-payout"></i>Payout</a>
+      <a href="#"><i class="icon-postback"></i>Postback</a>
       <hr></hr>
+	  <div class="wrapper">
+		<button class="btns down"><i class="icon-wallet"></i>&nbsp;$1500000&nbsp;<i class="icon-arrow-down"></i></button>
+		<button class="btns not"><i class="icon-notification"></i></button>
+		<button class="btns pro"><i class="icon-profile"></i>&nbsp;Leonardo Di Caprio</button>
+		<button class="btns quit"><i class="icon-quit"></i></button>
+	  </div> 
   </div>
-  <div class="top">
-        <button class="btn down"><i class="icon-wallet"></i>&nbsp;$1500000&nbsp;<i class="icon-arrow-down"></i></button>
-        <button class="btn not"><i class="icon-notification"></i></button>
-        <button class="btn pro"><i class="icon-profile"></i>&nbsp;Leonardo Di Caprio</button>
-        <button class="btn quit"><i class="icon-quit"></i></button>  
-	</div>
-   
+  <div id="top1" class="top">
+		<button class="btn down"><i class="icon-wallet"></i>&nbsp;$1500000&nbsp;<i class="icon-arrow-down"></i></button>
+		<button class="btn not"><i class="icon-notification"></i></button>
+		<button class="btn pro"><i class="icon-profile"></i>&nbsp;Leonardo Di Caprio</button>
+		<button class="btn quit"><i class="icon-quit"></i></button>
+		<button id="div" class="hamburger" onclick="toggleNav()"></button>
+  </div>
+  
 <!-- CSS GRID -->  
-<div class="container">
-	  <div class="main">
+<div id="container1" class="container">
+	  <div class="main" id="main1">
 		 <section class="general">
 			<div class="general-title">GENERAL STATISTIC</div>
 			<div class="general-table" style="postiton: absolute;">
@@ -63,7 +71,7 @@
         <button class="btn-chart"><i class=""></i>Earned</button>
 			</div>
       <div class="img-chart">
-        <img class="img" src="">
+        <img class="img" src="pics/graf.jpg">
       </div>  
 		 </section>
 		 <section class="details">
