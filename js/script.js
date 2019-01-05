@@ -24,3 +24,27 @@ function closeSlideMenu(){
 function toggleNav() {
 	nav ? closeSlideMenu() : openSlideMenu();
 }
+
+
+
+/*
+function toggleMenu(visible) {
+  document.querySelector('.hamburger').classList.toggle('open', visible)
+}
+
+document.querySelector('.hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu()
+});
+*/
+
+function fullDate(){
+	var date = new Date();
+	var d = date.getDay();
+	var m = date.getMonth();
+	var y = date.getFullYear();
+	
+	var dmy = d + "/" + m + "/" + y;
+	document.getElementById("gen-input1").value = dmy;
+	//return dmy;
+}
