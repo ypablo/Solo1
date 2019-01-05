@@ -125,6 +125,10 @@ hr {
 	text-align: center;	
 }
 
+#gen-input2 {
+	width: 150px;
+}
+
 .general-underlines {
 	display: flex;
 	flex-wrap:wrap;
