@@ -52,6 +52,7 @@ $b_color_10: transparent;
 	color: $color_1;
 	background-color: $color_4;
 	text-align: center;
+	font-size: 1.2vw;
 	>a {
 		&:hover {
 			background-color: $b_color_5;
@@ -80,7 +81,7 @@ $b_color_10: transparent;
 	grid-row: 1/4;
 	grid-column: 2/4;
 	justify-content: center;
-	background-color: $b_color_2;
+	background-color: $color_1;
 	overflow: auto;
 	>section {
 		margin: 0 1em 1em;
@@ -406,6 +407,7 @@ hr {
 		text-align: center;
 		transition: 0.7s;
 		z-index: 1;
+		font-size: 2.5vw;
 	}
 	.top {
 		height: 50px;
