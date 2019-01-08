@@ -1,18 +1,13 @@
 $color_1: white;
 $color_2: grey;
-$color_3: #7f8c8d;
 $color_4: #17202a;
-$b_color_1: #17202a;
-$b_color_2: white;
 $b_color_3: #f4f7f9;
-$b_color_4: #fff;
 $b_color_5: #2c3e50;
 $b_color_6: #eaecee;
 $b_color_7: #99a3a4;
 $b_color_8: black;
 $b_color_9: #ff5733;
 $b_color_10: transparent;
-$b_color_11: grey;
 
 
 @mixin gen_btn_input {
@@ -21,8 +16,6 @@ $b_color_11: grey;
 	text-align: center;
 }
 	
-
-
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -57,7 +50,7 @@ $b_color_11: grey;
 	width: 10vw;
 	height: 100vh;
 	color: $color_1;
-	background-color: $b_color_1;
+	background-color: $color_4;
 	text-align: center;
 	>a {
 		&:hover {
@@ -79,7 +72,7 @@ $b_color_11: grey;
 	display: flex;
 	justify-content: flex-end;
 	align-items: baseline;
-	background-color: $b_color_2;
+	background-color: $color_1;
 	margin: 0;
 	padding: 0;
 }
@@ -87,12 +80,12 @@ $b_color_11: grey;
 	grid-row: 1/4;
 	grid-column: 2/4;
 	justify-content: center;
-	background-color: $b_color_3;
+	background-color: $b_color_2;
 	overflow: auto;
 	>section {
 		margin: 0 1em 1em;
 		border: 1px solid grey;
-		background-color: $b_color_4;
+		background-color: $color_1;
 		font-size: 1.5em;
 		&:first-child {
 			margin-top: 1em;
@@ -102,7 +95,7 @@ $b_color_11: grey;
 .btn {
 	height: 35px;
 	font-size: 14px;
-	background-color: $b_color_2;
+	background-color: $color_1;
 	border: 0.5px solid grey;
 	text-align: center;
 	text-decoration: none;
@@ -133,7 +126,7 @@ hr {
 	border-bottom: 1px solid grey;
 	padding: 10px;
 	margin: 0;
-	color: $color_3;
+	color: $color_2;
 }
 [class*='-table'] {
 	display: flex;
@@ -183,7 +176,7 @@ hr {
 	color: $color_2;
 	width: 10em;
 	font-weight: bold;
-	background-color: $b_color_2;
+	background-color: $color_1;
 	padding: 5px;
 	&:hover {
 		background-color: $b_color_6;
@@ -197,7 +190,7 @@ hr {
 	color: $color_2;
 	width: 10em;
 	font-weight: bold;
-	background-color: $b_color_2;
+	background-color: $color_1;
 	padding: 5px;
 	&:hover {
 		background-color: $b_color_6;
@@ -211,7 +204,7 @@ hr {
 	color: $color_2;
 	width: 10em;
 	font-weight: bold;
-	background-color: $b_color_2;
+	background-color: $color_1;
 	padding: 5px;
 	&:hover {
 		background-color: $b_color_6;
@@ -225,7 +218,7 @@ hr {
 	color: $color_2;
 	width: 10em;
 	font-weight: bold;
-	background-color: $b_color_2;
+	background-color: $color_1;
 	padding: 5px;
 	&:hover {
 		background-color: $b_color_6;
@@ -381,7 +374,7 @@ hr {
 		display: none;
 	}
 }
-.just {
+.just, .manager {
 	max-width: 100%;
 	height: auto;
 }
@@ -409,14 +402,14 @@ hr {
 		width: 0;
 		height: 100vh;
 		color: $color_1;
-		background-color: $b_color_1;
+		background-color: $color_4;
 		text-align: center;
 		transition: 0.7s;
 		z-index: 1;
 	}
 	.top {
 		height: 50px;
-		background-color: $b_color_1;
+		background-color: $color_4;
 		transition: 0.7s;
 	}
 	.btn {
@@ -433,7 +426,7 @@ hr {
 		border-radius: 5%;
 		margin-bottom: 10px;
 		&:hover {
-			background-color: $b_color_11;
+			background-color: $color_2;
 		}
 	}
 	.wrapper {
