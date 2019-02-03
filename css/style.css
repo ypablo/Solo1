@@ -1,3 +1,6 @@
+
+*{ margin:0; padding:0;}
+
 * { box-sizing: border-box; padding: 0; margin: 0; }
 
 *:after { box-sizing: border-box; padding: 0; margin: 0; }
@@ -6,7 +9,7 @@
 
 .container { display: -ms-grid; display: grid; -ms-grid-columns: 10vw auto; grid-template-columns: 10vw auto; -ms-grid-rows: 50px auto; grid-template-rows: 50px auto; grid-template-areas: ". ." ". main"; width: 100vw; height: 100vh; }
 
-.side { position: fixed; width: 10vw; height: 100vh; color: white; background-color: #17202a; text-align: center; font-size: 1.2vw; }
+.side { position: fixed; width: 10vw; height: 100vh; color: white; background-color: #17202a; text-align: left; font-size: 1.2vw; margin: 0; padding: 0; z-index: 999;}
 
 .side > a { display: -ms-flexbox; display: flex; text-decoration: none; color: white; padding: 10px; height: 50px; -ms-flex-pack: left; justify-content: left; -ms-flex-align: center; align-items: center; }
 
@@ -14,9 +17,9 @@
 
 .side [class*='icon-'] { padding-right: 10px; }
 
-.top { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: baseline; align-items: baseline; background-color: white; margin: 0; padding: 0; }
+.top { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: baseline; align-items: baseline; background-color: white; margin: 0; padding: 0; z-index: 0; }
 
-.main { grid-row: 1/4; grid-column: 2/4; -ms-flex-pack: center; justify-content: center; background-color: #f4f7f9; overflow: auto;}
+.main { grid-row: 1/4; grid-column: 2/4; -ms-flex-pack: center; justify-content: center; background-color: #f4f7f9; overflow: auto; margin: 0; padding: 0; z-index: 0;}
 
 .main > section { margin: 0 1em 1em; border: 1px solid grey; background-color: white; font-size: 1.5em; }
 
@@ -114,10 +117,11 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin:
 
 .wrapper { display: block; visibility: hidden; }
 
-@media (max-width: 768px) { .container { display: -ms-grid; display: grid; -ms-grid-columns: auto; grid-template-columns: auto; -ms-grid-rows: 50px auto; grid-template-rows: 50px auto; grid-template-areas: "." "main"; width: 100vw; height: 100vh; transition: margin-left 0.7s; }
+@media (max-width: 768px) { 
+  .container { display: -ms-grid; display: grid; -ms-grid-columns: auto; grid-template-columns: auto; -ms-grid-rows: 50px auto; grid-template-rows: 50px auto; grid-template-areas: "." "main"; width: 100vw; height: 100vh; transition: margin-left 0.7s; z-index: 0; }
   .main { width: 100vw; height: 100vh; }
-  .side { overflow-x: hidden; margin-left: 0; width: 0; height: 100vh; color: white; background-color: #17202a; text-align: center; transition: 0.7s; z-index: 1; font-size: 2.5vw;}
-  .top { height: 50px; background-color: #17202a; transition: 0.7s; }
+  .side {overflow-x: hidden; margin-left: 0; width: 0; height: 100vh; color: white; background-color: #17202a; text-align: center; transition: 0.7s; z-index: 999; font-size: 3vw; margin:0; padding: 0;}
+  .top { height: 50px; background-color: #17202a; transition: 0.7s; z-index: 0;}
   .btn { margin-top: 50vh; transition: 0.7s; }
   .btns { visibility: visible; background-color: transparent; border: 2px solid grey; padding: 5px; color: white; cursor: pointer; border-radius: 5%; margin-bottom: 10px; }
   .btns:hover { background-color: grey; }

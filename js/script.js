@@ -24,3 +24,5 @@ function closeSlideMenu(){
 function toggleNav() {
 	nav ? closeSlideMenu() : openSlideMenu();
 }
+
+   
